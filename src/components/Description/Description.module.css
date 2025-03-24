@@ -1,0 +1,11 @@
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+.text {
+  font-size: 20px;
+  text-align: left;
+}

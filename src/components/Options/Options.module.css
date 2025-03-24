@@ -1,0 +1,13 @@
+.box {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.button {
+  border: 2px solid rgb(179, 179, 179);
+  box-shadow: 2px 2px 5px rgb(179, 179, 179);
+  border-radius: 4px;
+  font-size: 20px;
+  padding: 8px;
+}
