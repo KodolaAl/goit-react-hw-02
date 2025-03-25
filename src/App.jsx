@@ -5,17 +5,23 @@ import Options from "./components/Options/Options";
 import Feedback from "./components/Feedback/Feedback";
 
 function App() {
-  const [values, setValues] = useState({
+  const [feedback, setFeetback] = useState({
     good: 0,
     neutral: 0,
     bad: 0,
   });
+  const updateFeedback = (feedbackType) => {
+    setFeetback({
+      ...feedback,
+      [feedbackType]: feedback[feedbackType] + 1,
+    });
+  };
 
   return (
     <>
       <Description />
-      <Options />
-      <Feedback values={values} />
+      <Options updateFeedback={updateFeedback} />
+      <Feedback feedback={feedback} />
     </>
   );
 }

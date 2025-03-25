@@ -1,10 +1,10 @@
 import css from "./Feedback.module.css";
-const Feedback = ({ values }) => {
+const Feedback = ({ feedback }) => {
   return (
     <div className={css.box}>
-      <p className={css.text}>Good: {values.good}</p>
-      <p className={css.text}>Neutral: {values.neutral}</p>
-      <p className={css.text}>Bad: {values.bad}</p>
+      <p className={css.text}>Good: {feedback.good}</p>
+      <p className={css.text}>Neutral: {feedback.neutral}</p>
+      <p className={css.text}>Bad: {feedback.bad}</p>
     </div>
   );
 };
